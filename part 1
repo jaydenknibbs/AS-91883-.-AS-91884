@@ -1,0 +1,40 @@
+#this program has been writen by jayden knibbs
+#this program is about a math quiz
+#auther is jayden knibbs
+# version 1
+#this program was started on 24.10.23
+# the purpose of this code is ask for the persons name and ask if they need instructions
+
+print("Hello user, please state your name.")
+print()
+name = input()
+while not name.isalpha():
+  print("Please respond with your name, which should not contain any numbers or special symbols.")
+  name = input()
+while True:
+  print(f"{name}, have you done this quiz before? (Yes/No):")
+  done_qiuz_before = input().lower()
+  if done_qiuz_before == "yes":
+    print(f"Great! Let's get started, {name}.")
+    break
+  elif done_qiuz_before == "no":
+    print("please read the instructions")
+    break
+  else:
+    print("Please respond with 'Yes' or 'No'.")
+if done_qiuz_before == "no":
+  print("*** INSTRUCTIONS ***")
+  print()
+  print("You will have to select an amount of qestions you want to do in each qestion")
+  print()
+  print( "You will have type in your answer and te program win remember if it is right or wrong")
+  print( "once you have complete the quiz your score will be compiled and givin to you")
+  print("you may re-try the quiz as many times as you want")
+  print()
+
+#component 1
+#auther is jayden knibbs
+#version 2 
+#this program was started on 24.10.23
+# the purpose of this code is to ask a list of qestions to the user.
+
